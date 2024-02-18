@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIN2DEC</title>
+
+<link href="style.css"  rel="stylesheet">
+</head>
+<body>
+
+   
+    
+    <div class="container">
+    <input  required="required" type="number" class="camposDeTexto" id="input" maxlength="8" 
+    oninput="javascript: if (this.value.length > this.maxLength) 
+    this.value = this.value.slice(0, this.maxLength);" placeholder="Numeros Aceitos São Apenas 0's e 1's..."/>
+    <span class="content">Binarie number</span>
+
+    </div> 
+
+
+      <button class="btn" id="botaoDecimal" onclick="obterDecimal('parametro1', 'parametro2')">Obter Decimal</button>
+      <button class="btn" onclick="apagar()" >Reset</button>
+
+      <div class="container">
+      <input type="text" id="output" class="camposDeTexto" 
+      placeholder="O Valor Decimal Aparecera Aqui!" readonly/> 
+    </div> 
+
+ 
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
